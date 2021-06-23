@@ -347,7 +347,7 @@
           "id": "e8ff78e0-e339-4a61-984d-94f08e94ed4f",
           "type": "basic.code",
           "data": {
-            "code": "//BW: Pseudo random bitstream generator\n\n// Todo.. capture sequence from MC\nreg [8:0] pseudo_random = 8'b10101011;\n\nreg [23:0] reg_ctr;\n\nalways @(negedge clock) \n  begin \n    if (reg_ctr == 7)\n      reg_ctr <= 0;\n    else\n      reg_ctr <= reg_ctr + 1;\n  end\n  \nassign out_oscram = pseudo_random[reg_ctr];",
+            "code": "//BW: Pseudo random bitstream generator\n\n// Todo.. capture sequence from MC\nreg [7:0] pseudo_random = 8'b10101011;\n\nreg [23:0] reg_ctr;\n\nalways @(negedge clock) \n  begin \n    if (reg_ctr == 7)\n      reg_ctr <= 0;\n    else\n      reg_ctr <= reg_ctr + 1;\n  end\n  \nassign out_oscram = pseudo_random[reg_ctr];",
             "params": [],
             "ports": {
               "in": [
