@@ -1,6 +1,8 @@
 # DC2000
 
-All material regarding the Soundcraft DC-2000 computer replacement project.
+Attempt to design a new CPU module for the Soundcraft DC-2000.
+
+This repository contains all material regarding the Soundcraft DC-2000 computer replacement project.
 If you have any information that could be usefull contact me at z@dc-zone.com
 
 More information about this project:
