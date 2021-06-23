@@ -1,4 +1,4 @@
-# DC2000
+# Soundcraft DC-2000
 
 Attempt to design a new CPU module for the Soundcraft DC-2000.
 
