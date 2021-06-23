@@ -5,3 +5,5 @@ If you have any information that could be usefull contact me at
 
 z <at> dc-zone.com
 
+More information about this project:
+https://forums.dc-zone.com/discussion/13/dc2000-main-display-board-replacement-project
