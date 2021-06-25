@@ -1,93 +1,16 @@
 {
   "version": "1.2",
   "package": {
-    "name": "",
-    "version": "",
-    "description": "",
-    "author": "",
+    "name": "DC-2000 FPGA Communication module",
+    "version": "1.0",
+    "description": "DC-2000 FPGA Communication module",
+    "author": "DoctorZ (z@dc-zone.com)",
     "image": ""
   },
   "design": {
     "board": "blackice-mx",
     "graph": {
       "blocks": [
-        {
-          "id": "45466e55-034a-4b2b-8fe0-47c7094a8b96",
-          "type": "basic.output",
-          "data": {
-            "name": "Clock LED",
-            "pins": [
-              {
-                "index": "0",
-                "name": "LED_YELLOW",
-                "value": "55"
-              }
-            ],
-            "virtual": false
-          },
-          "position": {
-            "x": -272,
-            "y": 296
-          }
-        },
-        {
-          "id": "124ca999-8a01-4b3b-b7ce-315e8691fb98",
-          "type": "basic.output",
-          "data": {
-            "name": "OUT LED",
-            "pins": [
-              {
-                "index": "0",
-                "name": "LED_BLUE",
-                "value": "49"
-              }
-            ],
-            "virtual": false
-          },
-          "position": {
-            "x": 1784,
-            "y": 392
-          }
-        },
-        {
-          "id": "45a8179d-93ba-4b02-939f-1e6b411f79c7",
-          "type": "basic.input",
-          "data": {
-            "name": "CAD.RCK",
-            "pins": [
-              {
-                "index": "0",
-                "name": "PMOD[14]",
-                "value": "10"
-              }
-            ],
-            "virtual": false,
-            "clock": false
-          },
-          "position": {
-            "x": -760,
-            "y": 400
-          }
-        },
-        {
-          "id": "e2215854-1660-43e5-b1cb-0ab917006924",
-          "type": "basic.output",
-          "data": {
-            "name": "Output LED",
-            "pins": [
-              {
-                "index": "0",
-                "name": "TD2P",
-                "value": "48"
-              }
-            ],
-            "virtual": false
-          },
-          "position": {
-            "x": 1784,
-            "y": 464
-          }
-        },
         {
           "id": "8b948331-1a50-4889-9aec-3a7be5f1d5e4",
           "type": "basic.input",
@@ -104,35 +27,113 @@
             "clock": false
           },
           "position": {
-            "x": -760,
-            "y": 608
+            "x": -584,
+            "y": -1112
           }
         },
         {
-          "id": "3b67ca28-21bc-456e-9bd2-9235695e6a79",
-          "type": "basic.output",
+          "id": "0bf59788-9033-4a4c-abd1-244496f2c913",
+          "type": "basic.input",
           "data": {
-            "name": "Key LED",
+            "name": "RCV.CLOCK",
             "pins": [
               {
                 "index": "0",
-                "name": "LED_RED",
-                "value": "56"
+                "name": "PMOD[2]",
+                "value": "32"
+              }
+            ],
+            "virtual": false,
+            "clock": false
+          },
+          "position": {
+            "x": -360,
+            "y": -640
+          }
+        },
+        {
+          "id": "bae7afbe-8629-41a8-b277-027e1c09f713",
+          "type": "basic.output",
+          "data": {
+            "name": "DONE",
+            "pins": [
+              {
+                "index": "0",
+                "name": "PMOD[4]",
+                "value": "34"
               }
             ],
             "virtual": false
           },
           "position": {
-            "x": 968,
-            "y": 856
+            "x": 2664,
+            "y": -432
+          }
+        },
+        {
+          "id": "4245b52f-13b4-4bd2-9e59-bee8ffc155ea",
+          "type": "basic.input",
+          "data": {
+            "name": "System Clock",
+            "pins": [
+              {
+                "index": "0",
+                "name": "CLK",
+                "value": "60"
+              }
+            ],
+            "virtual": false,
+            "clock": true
+          },
+          "position": {
+            "x": -552,
+            "y": -368
+          }
+        },
+        {
+          "id": "d4266631-dd5f-4d6e-9485-00d2f25dce8f",
+          "type": "basic.output",
+          "data": {
+            "name": "OUT",
+            "pins": [
+              {
+                "index": "0",
+                "name": "PMOD[5]",
+                "value": "33"
+              }
+            ],
+            "virtual": false
+          },
+          "position": {
+            "x": 2664,
+            "y": -296
+          }
+        },
+        {
+          "id": "0a8139a1-bc7a-4f3c-9420-eec56ba6fb90",
+          "type": "basic.output",
+          "data": {
+            "name": "TX.CLK",
+            "pins": [
+              {
+                "index": "0",
+                "name": "PMOD[3]",
+                "value": "31"
+              }
+            ],
+            "virtual": false
+          },
+          "position": {
+            "x": 1344,
+            "y": -224
           }
         },
         {
           "id": "e505c0e1-e781-4a4b-b154-24dc7c39a148",
           "type": "8026abbda6bfa79c6f4c6debd4e97ae7b51ee8d3",
           "position": {
-            "x": -624,
-            "y": 608
+            "x": -456,
+            "y": -1112
           },
           "size": {
             "width": 96,
@@ -143,8 +144,8 @@
           "id": "325f9f5d-4bac-4170-88cd-20aef1815012",
           "type": "96f0988f8164f7c1b216c8ee122d6ce3cf6bc139",
           "position": {
-            "x": -488,
-            "y": 608
+            "x": -328,
+            "y": -1112
           },
           "size": {
             "width": 96,
@@ -195,8 +196,8 @@
             }
           },
           "position": {
-            "x": -160,
-            "y": 424
+            "x": -112,
+            "y": -1336
           },
           "size": {
             "width": 320,
@@ -247,8 +248,8 @@
             }
           },
           "position": {
-            "x": 304,
-            "y": 424
+            "x": 352,
+            "y": -1336
           },
           "size": {
             "width": 320,
@@ -299,8 +300,8 @@
             }
           },
           "position": {
-            "x": 760,
-            "y": 424
+            "x": 808,
+            "y": -1336
           },
           "size": {
             "width": 320,
@@ -312,7 +313,7 @@
           "type": "e9ceb27ad69f0785afc607dcd7f0924f517182e9",
           "position": {
             "x": 1224,
-            "y": 512
+            "y": -1248
           },
           "size": {
             "width": 96,
@@ -324,7 +325,7 @@
           "type": "7ebc902cbb1c4db116741533a86182485900ecda",
           "position": {
             "x": 1400,
-            "y": 528
+            "y": -1232
           },
           "size": {
             "width": 96,
@@ -336,7 +337,7 @@
           "type": "e9ceb27ad69f0785afc607dcd7f0924f517182e9",
           "position": {
             "x": 1552,
-            "y": 392
+            "y": -1368
           },
           "size": {
             "width": 96,
@@ -363,20 +364,148 @@
             }
           },
           "position": {
-            "x": 304,
-            "y": 816
+            "x": 816,
+            "y": -976
           },
           "size": {
-            "width": 568,
+            "width": 480,
             "height": 288
           }
         },
         {
-          "id": "fccea274-e989-4be7-8dae-4c3d07a8ef1e",
-          "type": "8026abbda6bfa79c6f4c6debd4e97ae7b51ee8d3",
+          "id": "d60d7a2a-d134-4c3c-9507-c8ca46020357",
+          "type": "basic.code",
+          "data": {
+            "code": "// Baud rate generator for UART\nparameter MAX_RATE_RX = CLOCK_RATE / (2 * BAUD_RATE * 16); // 16x oversample\nparameter MAX_RATE_TX = CLOCK_RATE / (2 * BAUD_RATE);\nparameter RX_CNT_WIDTH = $clog2(MAX_RATE_RX);\nparameter TX_CNT_WIDTH = $clog2(MAX_RATE_TX);\n\nreg [RX_CNT_WIDTH - 1:0] rxCounter = 0;\nreg [TX_CNT_WIDTH - 1:0] txCounter = 0;\n\ninitial begin\n    rxClk = 1'b0;\n    txClk = 1'b0;\nend\n\nalways @(posedge clk) begin\n    // rx clock\n    if (rxCounter == MAX_RATE_RX[RX_CNT_WIDTH-1:0]) begin\n        rxCounter <= 0;\n        rxClk <= ~rxClk;\n    end else begin\n        rxCounter <= rxCounter + 1'b1;\n    end\n    // tx clock\n    if (txCounter == MAX_RATE_TX[TX_CNT_WIDTH-1:0]) begin\n        txCounter <= 0;\n        txClk <= ~txClk;\n    end else begin\n        txCounter <= txCounter + 1'b1;\n    end\nend",
+            "params": [
+              {
+                "name": "CLOCK_RATE"
+              },
+              {
+                "name": "BAUD_RATE"
+              }
+            ],
+            "ports": {
+              "in": [
+                {
+                  "name": "clk"
+                }
+              ],
+              "out": [
+                {
+                  "name": "rxClk"
+                },
+                {
+                  "name": "txClk"
+                }
+              ]
+            }
+          },
           "position": {
-            "x": -632,
-            "y": 400
+            "x": 872,
+            "y": -488
+          },
+          "size": {
+            "width": 344,
+            "height": 280
+          }
+        },
+        {
+          "id": "ffbce4f3-38f0-45a7-b5c6-ec7e27a37aba",
+          "type": "basic.code",
+          "data": {
+            "code": "//UART RECEIVER\n\n// states of state machine\n`define RESET       3'b001\n`define IDLE        3'b010\n`define START_BIT   3'b011 // transmitter only\n`define DATA_BITS   3'b100\n`define STOP_BIT    3'b101\n\n// states of state machine\nreg [1:0] RESET = 2'b00;\nreg [1:0] IDLE = 2'b01;\nreg [1:0] DATA_BITS = 2'b10;\nreg [1:0] STOP_BIT = 2'b11;\n\nreg [2:0] state;\nreg [2:0] bitIdx = 3'b0; // for 8-bit data\nreg [1:0] inputSw = 2'b0; // shift reg for input signal state\nreg [3:0] clockCount = 4'b0; // count clocks for 16x oversample\nreg [7:0] receivedData = 8'b0; // temporary storage for input data\n\ninitial begin\n    out <= 8'b0;\n    err <= 1'b0;\n    done <= 1'b0;\n    busy <= 1'b0;\nend\n\nalways @(posedge clk) begin\n    inputSw = { inputSw[0], in };\n\n    if (!en) begin\n        state = RESET;\n    end\n\n    case (state)\n        RESET: begin\n            out <= 8'b0;\n            err <= 1'b0;\n            done <= 1'b0;\n            busy <= 1'b0;\n            bitIdx <= 3'b0;\n            clockCount <= 4'b0;\n            receivedData <= 8'b0;\n            if (en) begin\n                state <= IDLE;\n            end\n        end\n\n        IDLE: begin\n            done <= 1'b0;\n            if (&clockCount) begin\n                state <= DATA_BITS;\n                out <= 8'b0;\n                bitIdx <= 3'b0;\n                clockCount <= 4'b0;\n                receivedData <= 8'b0;\n                busy <= 1'b1;\n                err <= 1'b0;\n            end else if (!(&inputSw) || |clockCount) begin\n                // Check bit to make sure it's still low\n                if (&inputSw) begin\n                    err <= 1'b1;\n                    state <= RESET;\n                end\n                clockCount <= clockCount + 4'b1;\n            end\n        end\n\n        // Wait 8 full cycles to receive serial data\n        DATA_BITS: begin\n            if (&clockCount) begin // save one bit of received data\n                clockCount <= 4'b0;\n                // TODO: check the most popular value\n                receivedData[bitIdx] <= inputSw[0];\n                if (&bitIdx) begin\n                    bitIdx <= 3'b0;\n                    state <= STOP_BIT;\n                end else begin\n                    bitIdx <= bitIdx + 3'b1;\n                end\n            end else begin\n                clockCount <= clockCount + 4'b1;\n            end\n        end\n\n        /*\n        * Baud clock may not be running at exactly the same rate as the\n        * transmitter. Next start bit is allowed on at least half of stop bit.\n        */\n        STOP_BIT: begin\n            if (&clockCount || (clockCount >= 4'h8 && !(|inputSw))) begin\n                state <= IDLE;\n                done <= 1'b1;\n                busy <= 1'b0;\n                out <= receivedData;\n                clockCount <= 4'b0;\n            end else begin\n                clockCount <= clockCount + 1;\n                // Check bit to make sure it's still high\n                if (!(|inputSw)) begin\n                    err <= 1'b1;\n                    state <= RESET;\n                end\n            end\n        end\n\n        default: state <= IDLE;\n    endcase\nend",
+            "params": [],
+            "ports": {
+              "in": [
+                {
+                  "name": "clk"
+                },
+                {
+                  "name": "en"
+                },
+                {
+                  "name": "in"
+                }
+              ],
+              "out": [
+                {
+                  "name": "out",
+                  "range": "[7:0]",
+                  "size": 8
+                },
+                {
+                  "name": "done"
+                },
+                {
+                  "name": "busy"
+                },
+                {
+                  "name": "err"
+                }
+              ]
+            }
+          },
+          "position": {
+            "x": 1952,
+            "y": -808
+          },
+          "size": {
+            "width": 592,
+            "height": 464
+          }
+        },
+        {
+          "id": "6b64f71e-b5e6-4b1e-bdef-707afe27af29",
+          "type": "basic.code",
+          "data": {
+            "code": "reg [2:0] state  = `RESET;\nreg [7:0] data   = 8'b0; // to store a copy of input data\nreg [2:0] bitIdx = 3'b0; // for 8-bit data\nreg [2:0] idx;\n\nassign idx = bitIdx;\n\nalways @(posedge clk) begin\n    case (state)\n        default     : begin\n            state   <= `IDLE;\n        end\n        `IDLE       : begin\n            out     <= 1'b1; // drive line high for idle\n            done    <= 1'b0;\n            busy    <= 1'b0;\n            bitIdx  <= 3'b0;\n            data    <= 8'b0;\n            if (start & en) begin\n                data    <= in; // save a copy of input data\n                state   <= `START_BIT;\n            end\n        end\n        `START_BIT  : begin\n            out     <= 1'b0; // send start bit (low)\n            busy    <= 1'b1;\n            state   <= `DATA_BITS;\n        end\n        `DATA_BITS  : begin // Wait 8 clock cycles for data bits to be sent\n            out     <= data[idx];\n            if (&bitIdx) begin\n                bitIdx  <= 3'b0;\n                state   <= `STOP_BIT;\n            end else begin\n                bitIdx  <= bitIdx + 1'b1;\n            end\n        end\n        `STOP_BIT   : begin // Send out Stop bit (high)\n            done    <= 1'b1;\n            data    <= 8'b0;\n            state   <= `IDLE;\n        end\n    endcase\nend",
+            "params": [],
+            "ports": {
+              "in": [
+                {
+                  "name": "clk"
+                },
+                {
+                  "name": "en"
+                },
+                {
+                  "name": "start"
+                },
+                {
+                  "name": "in",
+                  "range": "[7:0]",
+                  "size": 8
+                }
+              ],
+              "out": [
+                {
+                  "name": "out"
+                },
+                {
+                  "name": "done"
+                },
+                {
+                  "name": "busy"
+                }
+              ]
+            }
+          },
+          "position": {
+            "x": 1944,
+            "y": -328
+          },
+          "size": {
+            "width": 608,
+            "height": 392
+          }
+        },
+        {
+          "id": "250e1cd9-83a3-4226-81c6-b2948532f3a1",
+          "type": "c83dcd1d9ab420d911df81b3dfae04681559c623",
+          "position": {
+            "x": 1776,
+            "y": -216
           },
           "size": {
             "width": 96,
@@ -384,15 +513,77 @@
           }
         },
         {
-          "id": "0868bed5-ac9b-49fc-9146-9cf30cc236ef",
-          "type": "96f0988f8164f7c1b216c8ee122d6ce3cf6bc139",
+          "id": "0f7ff2d4-3497-49f7-ae7d-9976746e02dc",
+          "type": "c83dcd1d9ab420d911df81b3dfae04681559c623",
           "position": {
-            "x": -488,
-            "y": 400
+            "x": 1792,
+            "y": -608
           },
           "size": {
             "width": 96,
             "height": 64
+          }
+        },
+        {
+          "id": "d4b8e375-6435-4060-98f0-a9c04c0003de",
+          "type": "basic.code",
+          "data": {
+            "code": "/**\n * PLL configuration\n *\n * This Verilog module was generated automatically\n * using the icepll tool from the IceStorm project.\n * Use at your own risk.\n *\n * To-do BW: calculate correct frequency for serial communication\n *\n * Given input frequency:        16.000 MHz\n * Requested output frequency:   50.000 MHz\n * Achieved output frequency:    50.000 MHz\n */\n\nSB_PLL40_CORE #(\n\t\t.FEEDBACK_PATH(\"SIMPLE\"),\n\t\t.DIVR(4'b0000),\t\t// DIVR =  0\n\t\t.DIVF(7'b0110001),\t// DIVF = 49\n\t\t.DIVQ(3'b100),\t\t// DIVQ =  4\n\t\t.FILTER_RANGE(3'b001)\t// FILTER_RANGE = 1\n\t) uut (\n\t\t.LOCK(locked),\n\t\t.RESETB(1'b1),\n\t\t.BYPASS(1'b0),\n\t\t.REFERENCECLK(clock_in),\n\t\t.PLLOUTCORE(clock_out)\n\t\t);\n",
+            "params": [],
+            "ports": {
+              "in": [
+                {
+                  "name": "clock_in"
+                }
+              ],
+              "out": [
+                {
+                  "name": "clock_out"
+                },
+                {
+                  "name": "locked"
+                }
+              ]
+            }
+          },
+          "position": {
+            "x": -384,
+            "y": -504
+          },
+          "size": {
+            "width": 528,
+            "height": 328
+          }
+        },
+        {
+          "id": "24117f04-c1a4-44a4-b3a6-01806901fa74",
+          "type": "basic.code",
+          "data": {
+            "code": "/*\n* PLL Clock Jitter module\n*\n* BW: Todo -> Wait for PLL_LOCKER and Introdule random jitter on the clock edges\n* to avoid noise in the audio domain\n*/\n\ninitial clock_out = 0;\nassign clock_out = clock_in;\n",
+            "params": [],
+            "ports": {
+              "in": [
+                {
+                  "name": "clock_in"
+                },
+                {
+                  "name": "pll_locked"
+                }
+              ],
+              "out": [
+                {
+                  "name": "clock_out"
+                }
+              ]
+            }
+          },
+          "position": {
+            "x": 272,
+            "y": -520
+          },
+          "size": {
+            "width": 504,
+            "height": 352
           }
         }
       ],
@@ -499,19 +690,9 @@
           "vertices": [
             {
               "x": 1240,
-              "y": 376
+              "y": -1384
             }
           ]
-        },
-        {
-          "source": {
-            "block": "ff4447d1-0fd5-44fe-9851-3ea2f7b9e04b",
-            "port": "664caf9e-5f40-4df4-800a-b626af702e62"
-          },
-          "target": {
-            "block": "124ca999-8a01-4b3b-b7ce-315e8691fb98",
-            "port": "in"
-          }
         },
         {
           "source": {
@@ -525,88 +706,83 @@
         },
         {
           "source": {
-            "block": "e8ff78e0-e339-4a61-984d-94f08e94ed4f",
-            "port": "out_oscram"
+            "block": "d60d7a2a-d134-4c3c-9507-c8ca46020357",
+            "port": "txClk"
           },
           "target": {
-            "block": "3b67ca28-21bc-456e-9bd2-9235695e6a79",
+            "block": "6b64f71e-b5e6-4b1e-bdef-707afe27af29",
+            "port": "clk"
+          },
+          "vertices": []
+        },
+        {
+          "source": {
+            "block": "250e1cd9-83a3-4226-81c6-b2948532f3a1",
+            "port": "19c8f68d-5022-487f-9ab0-f0a3cd58bead"
+          },
+          "target": {
+            "block": "6b64f71e-b5e6-4b1e-bdef-707afe27af29",
+            "port": "en"
+          }
+        },
+        {
+          "source": {
+            "block": "0f7ff2d4-3497-49f7-ae7d-9976746e02dc",
+            "port": "19c8f68d-5022-487f-9ab0-f0a3cd58bead"
+          },
+          "target": {
+            "block": "ffbce4f3-38f0-45a7-b5c6-ec7e27a37aba",
+            "port": "en"
+          }
+        },
+        {
+          "source": {
+            "block": "ffbce4f3-38f0-45a7-b5c6-ec7e27a37aba",
+            "port": "err"
+          },
+          "target": {
+            "block": "bae7afbe-8629-41a8-b277-027e1c09f713",
             "port": "in"
           }
         },
         {
           "source": {
-            "block": "45a8179d-93ba-4b02-939f-1e6b411f79c7",
+            "block": "6b64f71e-b5e6-4b1e-bdef-707afe27af29",
             "port": "out"
           },
           "target": {
-            "block": "fccea274-e989-4be7-8dae-4c3d07a8ef1e",
-            "port": "bb4a1ca9-1b30-471e-92ca-ca7ff2fc1150"
-          }
-        },
-        {
-          "source": {
-            "block": "fccea274-e989-4be7-8dae-4c3d07a8ef1e",
-            "port": "a139fa0d-9b45-4480-a251-f4a66b49aa23"
-          },
-          "target": {
-            "block": "0868bed5-ac9b-49fc-9146-9cf30cc236ef",
-            "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
-          }
-        },
-        {
-          "source": {
-            "block": "0868bed5-ac9b-49fc-9146-9cf30cc236ef",
-            "port": "664caf9e-5f40-4df4-800a-b626af702e62"
-          },
-          "target": {
-            "block": "45466e55-034a-4b2b-8fe0-47c7094a8b96",
+            "block": "d4266631-dd5f-4d6e-9485-00d2f25dce8f",
             "port": "in"
           }
         },
         {
           "source": {
-            "block": "0868bed5-ac9b-49fc-9146-9cf30cc236ef",
-            "port": "664caf9e-5f40-4df4-800a-b626af702e62"
+            "block": "4245b52f-13b4-4bd2-9e59-bee8ffc155ea",
+            "port": "out"
           },
           "target": {
-            "block": "e8ff78e0-e339-4a61-984d-94f08e94ed4f",
-            "port": "clock"
-          },
-          "vertices": [
-            {
-              "x": -232,
-              "y": 960
-            }
-          ]
-        },
-        {
-          "source": {
-            "block": "0868bed5-ac9b-49fc-9146-9cf30cc236ef",
-            "port": "664caf9e-5f40-4df4-800a-b626af702e62"
-          },
-          "target": {
-            "block": "1adc812d-0fa9-4eee-b149-0d62898d6bb0",
-            "port": "clock"
+            "block": "d4b8e375-6435-4060-98f0-a9c04c0003de",
+            "port": "clock_in"
           }
         },
         {
           "source": {
-            "block": "0868bed5-ac9b-49fc-9146-9cf30cc236ef",
-            "port": "664caf9e-5f40-4df4-800a-b626af702e62"
+            "block": "d4b8e375-6435-4060-98f0-a9c04c0003de",
+            "port": "locked"
           },
           "target": {
-            "block": "96206ce2-4513-4061-969a-523c6c01e4b6",
-            "port": "clock"
+            "block": "24117f04-c1a4-44a4-b3a6-01806901fa74",
+            "port": "pll_locked"
           }
         },
         {
           "source": {
-            "block": "0868bed5-ac9b-49fc-9146-9cf30cc236ef",
-            "port": "664caf9e-5f40-4df4-800a-b626af702e62"
+            "block": "d4b8e375-6435-4060-98f0-a9c04c0003de",
+            "port": "clock_out"
           },
           "target": {
-            "block": "dc295a8c-ea25-4af5-83c3-39f974db8d5e",
-            "port": "clock"
+            "block": "24117f04-c1a4-44a4-b3a6-01806901fa74",
+            "port": "clock_in"
           }
         },
         {
@@ -615,7 +791,101 @@
             "port": "664caf9e-5f40-4df4-800a-b626af702e62"
           },
           "target": {
-            "block": "e2215854-1660-43e5-b1cb-0ab917006924",
+            "block": "ffbce4f3-38f0-45a7-b5c6-ec7e27a37aba",
+            "port": "in"
+          },
+          "vertices": [
+            {
+              "x": 1768,
+              "y": -984
+            }
+          ]
+        },
+        {
+          "source": {
+            "block": "24117f04-c1a4-44a4-b3a6-01806901fa74",
+            "port": "clock_out"
+          },
+          "target": {
+            "block": "d60d7a2a-d134-4c3c-9507-c8ca46020357",
+            "port": "clk"
+          }
+        },
+        {
+          "source": {
+            "block": "0bf59788-9033-4a4c-abd1-244496f2c913",
+            "port": "out"
+          },
+          "target": {
+            "block": "1adc812d-0fa9-4eee-b149-0d62898d6bb0",
+            "port": "clock"
+          }
+        },
+        {
+          "source": {
+            "block": "0bf59788-9033-4a4c-abd1-244496f2c913",
+            "port": "out"
+          },
+          "target": {
+            "block": "96206ce2-4513-4061-969a-523c6c01e4b6",
+            "port": "clock"
+          },
+          "vertices": [
+            {
+              "x": 304,
+              "y": -616
+            }
+          ]
+        },
+        {
+          "source": {
+            "block": "0bf59788-9033-4a4c-abd1-244496f2c913",
+            "port": "out"
+          },
+          "target": {
+            "block": "dc295a8c-ea25-4af5-83c3-39f974db8d5e",
+            "port": "clock"
+          },
+          "vertices": [
+            {
+              "x": 736,
+              "y": -952
+            }
+          ]
+        },
+        {
+          "source": {
+            "block": "0bf59788-9033-4a4c-abd1-244496f2c913",
+            "port": "out"
+          },
+          "target": {
+            "block": "e8ff78e0-e339-4a61-984d-94f08e94ed4f",
+            "port": "clock"
+          }
+        },
+        {
+          "source": {
+            "block": "0bf59788-9033-4a4c-abd1-244496f2c913",
+            "port": "out"
+          },
+          "target": {
+            "block": "ffbce4f3-38f0-45a7-b5c6-ec7e27a37aba",
+            "port": "clk"
+          },
+          "vertices": [
+            {
+              "x": 1472,
+              "y": -640
+            }
+          ]
+        },
+        {
+          "source": {
+            "block": "d60d7a2a-d134-4c3c-9507-c8ca46020357",
+            "port": "txClk"
+          },
+          "target": {
+            "block": "0a8139a1-bc7a-4f3c-9420-eec56ba6fb90",
             "port": "in"
           }
         }
@@ -1014,6 +1284,68 @@
               },
               "target": {
                 "block": "664caf9e-5f40-4df4-800a-b626af702e62",
+                "port": "in"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "c83dcd1d9ab420d911df81b3dfae04681559c623": {
+      "package": {
+        "name": "Bit 1",
+        "version": "1.0.0",
+        "description": "Assign 1 to the output wire",
+        "author": "Jesús Arroyo",
+        "image": "%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2247.303%22%20height=%2227.648%22%20viewBox=%220%200%2044.346456%2025.919999%22%3E%3Ctext%20style=%22line-height:125%25%22%20x=%22325.218%22%20y=%22315.455%22%20font-weight=%22400%22%20font-size=%2212.669%22%20font-family=%22sans-serif%22%20letter-spacing=%220%22%20word-spacing=%220%22%20transform=%22translate(-307.01%20-298.51)%22%3E%3Ctspan%20x=%22325.218%22%20y=%22315.455%22%20style=%22-inkscape-font-specification:'Courier%2010%20Pitch'%22%20font-family=%22Courier%2010%20Pitch%22%3E1%3C/tspan%3E%3C/text%3E%3C/svg%3E"
+      },
+      "design": {
+        "graph": {
+          "blocks": [
+            {
+              "id": "19c8f68d-5022-487f-9ab0-f0a3cd58bead",
+              "type": "basic.output",
+              "data": {
+                "name": ""
+              },
+              "position": {
+                "x": 608,
+                "y": 192
+              }
+            },
+            {
+              "id": "b959fb96-ac67-4aea-90b3-ed35a4c17bf5",
+              "type": "basic.code",
+              "data": {
+                "code": "// Bit 1\n\nassign v = 1'b1;",
+                "params": [],
+                "ports": {
+                  "in": [],
+                  "out": [
+                    {
+                      "name": "v"
+                    }
+                  ]
+                }
+              },
+              "position": {
+                "x": 96,
+                "y": 96
+              },
+              "size": {
+                "width": 384,
+                "height": 256
+              }
+            }
+          ],
+          "wires": [
+            {
+              "source": {
+                "block": "b959fb96-ac67-4aea-90b3-ed35a4c17bf5",
+                "port": "v"
+              },
+              "target": {
+                "block": "19c8f68d-5022-487f-9ab0-f0a3cd58bead",
                 "port": "in"
               }
             }
